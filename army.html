@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("flag.jpg");
+
+  min-height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  position: absolute;
+  left:300;
+  margin: 20px;
+  max-width:800px;
+  padding: 16px;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.btn1 {
+  background-color:red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%
+  opacity: 0.9;
+  right:0;
+}
+
+.btn1:hover {
+  opacity: 1;
+}
+</style>
+<title>JOIN INDIAN ARMY</title>
+</head>
+<body>
+<div class="bg-img">
+<form class="container" method="post">
+<fieldset><legend><h1>Personal details</h1></legend>
+State:<input type="text" name="state"><br><br>
+
+I Have:<input type="radio" name="have">Aadhar No</input>     <input type="radio" name="have1">UIDAI Enrollment Number</input><br><br>
+
+Aadhar/UIDAI Enrollment Number:<input type="text" name="aadhar"><br><br>
+
+<label for="name">Candidate Name:</label>
+  <input type="text" id="can" name="name" placeholder="required"><br>
+  <small>(Only as per Matric Certificate otherwise it will lead to cancellation of candidature)</small><br><br>
+  
+<label for="father">Father/Guardian Name:</label>
+<input type="text" id="name" name="father" placeholder="required"><br>
+<small>(As Given in Matriculation Certificate)</small><br><br>
+
+<label for="mother">Mother's Name:</label>
+<input type="text" id="name" name="mother" placeholder="required"><br>
+<small>(As Given in Matriculation Certificate)</small><br><br>
+
+<label for="date">Date of Birth:</label>
+<input type="date" id="date" name="dob" placeholder="required"><br>
+<small>(As Given in Matriculation Certificate)</small><br><br>
+
+E-mail Address:<input type="email" name="mail"><br><br>
+
+ <label for="phone">Mobile No:</label>
+  <input type="tel" id="phone" name="phone" placeholder="0123-456-789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br><br>
+
+<input type="checkbox" name="dec" value="dec" id="dec"><label for="dec"> I ,hereby give my consent to www.joinindianarmy.nic.in to obtain my Aadhar number, Name and Fingerprint 
+/Iris for authentication with UIDAI. www.joinindianarmy.nic.in has informed me that my identity information would only be used for authentication and also informed me that my
+biometric will not be stored/shared and will be submitted to CIDR only for the purpose of authentication.
+</label>
+<pre><button type="submit" class="btn"><a href="army2.html">submit</a></button> <button type="submit" class="btn1">cancel</button></pre>
+
+</fieldset></form></div>
+/div>
+<?php
+$_state=$_POST['state'];
+$_aadhar=$_POST['aadhar'];
+$_candidatename=$_POST['name'];
+$_father=$_POST['father'];
+$_mother=$_POST['mother'];
+$_dob=$_POST['dob'];
+?>
+</body>
+</html>
